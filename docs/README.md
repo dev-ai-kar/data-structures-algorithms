@@ -1,5 +1,3 @@
-<img src="data/thumbnail-0.jpg" alt="Algorithms Banner" width="1280"/>
-
 # Welcome to Data Structures & Algorithms 
 
 Mastering algorithms one step at a time with Java ☕, Python 🐍, and C++ 🔧 using Visual Studio Code 💻.
