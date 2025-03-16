@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "src/0.GettingStarted",
+        "src/2.UnionFind",
+    ],
+    "java.project.outputPath": "build",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ]
+}
