@@ -3,6 +3,7 @@
         "src",
         "src/0.GettingStarted",
         "src/2.UnionFind",
+        "src/3.Percolation",
     ],
     "java.project.outputPath": "build",
     "java.project.referencedLibraries": [
