@@ -2,8 +2,9 @@
     "java.project.sourcePaths": [
         "src",
         "src/0.GettingStarted",
-        "src/2.UnionFind",
-        "src/3.Percolation",
+        "src/1.UnionFind",
+        "src/2.Percolation",
+        "src/3.AnalysisOfAlgorithms",
     ],
     "java.project.outputPath": "build",
     "java.project.referencedLibraries": [

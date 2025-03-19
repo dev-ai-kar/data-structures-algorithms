@@ -1,7 +1,5 @@
 // Compilation: javac -cp ".;lib/algs4.jar" src/2.Percolation/Percolation.java -d build
 // Execution: java -cp ".;build;lib/algs4.jar" Percolation
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.StdStats;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class Percolation {
@@ -141,6 +139,7 @@ public class Percolation {
 
         // Test 6: Invalid constructor
         try {
+            @SuppressWarnings("unused")
             Percolation p6 = new Percolation(0);
         } catch (IllegalArgumentException e) {
             System.out.println("Test 6 - Caught invalid constructor: " + e.getMessage() + "\n");
