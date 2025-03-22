@@ -5,6 +5,7 @@
         "src/1.UnionFind",
         "src/2.Percolation",
         "src/3.AnalysisOfAlgorithms",
+        "src/4.StacksAndQueues",
     ],
     "java.project.outputPath": "build",
     "java.project.referencedLibraries": [
