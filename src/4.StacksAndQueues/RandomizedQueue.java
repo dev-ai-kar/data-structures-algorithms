@@ -5,19 +5,17 @@
  * implements the following API:
  */
 
- import java.util.Iterator;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Random;
+import edu.princeton.cs.algs4.StdRandom;
 
 public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item[] array;
     private int size;
-    private Random random;
 
     public RandomizedQueue() {
-        array = (Item[]) new Object[1];
+        array = (Item[]) new Object[2];
         size = 0;
-        random = new Random();
     }
 
     public boolean isEmpty() {
@@ -42,7 +40,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         }
-        int index = random.nextInt(size);
+        int index = StdRandom.uniformInt(size);
         Item item = array[index];
         array[index] = array[size - 1];
         array[size - 1] = null; // Avoid loitering
@@ -57,7 +55,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         }
-        int index = random.nextInt(size);
+        int index = StdRandom.uniformInt(size);
         return array[index];
     }
 
@@ -76,25 +74,14 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private class RandomizedQueueIterator implements Iterator<Item> {
         private Item[] items;
         private int current;
-        private Random rnd;
 
         public RandomizedQueueIterator() {
             items = (Item[]) new Object[size];
             for (int i = 0; i < size; i++) {
                 items[i] = array[i];
             }
-            rnd = new Random();
-            shuffle(items);
+            StdRandom.shuffle(items);
             current = 0;
-        }
-
-        private void shuffle(Item[] arr) {
-            for (int i = arr.length - 1; i > 0; i--) {
-                int j = rnd.nextInt(i + 1);
-                Item temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
         }
 
         public boolean hasNext() {

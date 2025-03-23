@@ -154,7 +154,7 @@ public class Deque<Item> implements Iterable<Item> {
             current = current.next;
             return item;
         }
-    }    
+    }
 
     // unit testing (required)
     public static void main(String[] args){
