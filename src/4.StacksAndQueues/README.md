@@ -95,7 +95,7 @@ public class LinkedListStackIterator implements Iterator<Item> {
         return item;
     }
 }
-
+```
 # Information on Java Generics
 Java prohibits generic array creation due to the interplay between generics (using type erasure) and arrays (being reified), which can lead to type safety violations. Here's the breakdown:
 
