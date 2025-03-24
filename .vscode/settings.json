@@ -7,6 +7,7 @@
         "src/3.AnalysisOfAlgorithms",
         "src/4.StacksAndQueues",
         "src/5.ElementarySorts",
+        "src/6.MergeSort",
     ],
     "java.project.outputPath": "build",
     "java.project.referencedLibraries": [
