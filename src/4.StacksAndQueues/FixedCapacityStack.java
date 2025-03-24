@@ -5,6 +5,7 @@ public class FixedCapacityStack<Item> {
     private Item[] s;
     private int N = 0;
 
+    @SuppressWarnings("unchecked")
     public FixedCapacityStack(int capacity) {
         // s = new Item[capacity];
         s = (Item[]) new Object[capacity]; // Java does not allow generic array creation. so we use ugly casting

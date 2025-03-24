@@ -10,6 +10,7 @@ import java.util.NoSuchElementException;
 public class Deque<Item> implements Iterable<Item> {
 
     // private class
+    @SuppressWarnings("hiding")
     private class Node<Item> {
         Item item;
         Node<Item> next;
