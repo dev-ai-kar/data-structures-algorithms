@@ -10,6 +10,15 @@ public class Insertion {
                     break;
     }
 
+    // Adding this signature to support sorting a subarray especially for MergeSort
+    public static void sort(Comparable[] a, int lo, int hi) {
+        for (int i = lo; i <= hi; i++) {
+            for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
+                exch(a, j, j - 1);
+            }
+        }
+    }
+
     @SuppressWarnings("unchecked")
     private static boolean less(Comparable v, Comparable w) {
         /* as before */ 
