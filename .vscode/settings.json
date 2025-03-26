@@ -8,6 +8,7 @@
         "src/4.StacksAndQueues",
         "src/5.ElementarySorts",
         "src/6.MergeSort",
+        "src/7.Collinear",
     ],
     "java.project.outputPath": "build",
     "java.project.referencedLibraries": [
