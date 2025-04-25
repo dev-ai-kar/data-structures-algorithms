@@ -10,6 +10,7 @@
         "src/6.MergeSort",
         "src/7.Collinear",
         "src/8.QuickSort",
+        "src/9.PriorityQueues",
     ],
     "java.project.outputPath": "build",
     "java.project.referencedLibraries": [
